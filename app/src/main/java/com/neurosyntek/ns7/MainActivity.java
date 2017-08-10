@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 startService(intent);
             }
         });
+
+        startService(new Intent(MainActivity.this,SocketServerService.class));
     }
 
 
